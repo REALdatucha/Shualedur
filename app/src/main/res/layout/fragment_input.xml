@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/background">
+
+    <!-- Title — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_input_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="ფინანსური მონაცემები"
+        android:textColor="@color/expense_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Income label -->
+    <TextView
+        android:id="@+id/dali_tv_label_income"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="შემოსავალი (₾)"
+        android:textSize="14sp"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_input_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Income EditText — prefix: dali -->
+    <EditText
+        android:id="@+id/dali_et_income"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_label_income" />
+
+    <!-- Expenses label -->
+    <TextView
+        android:id="@+id/dali_tv_label_expenses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ხარჯები (₾)"
+        android:textSize="14sp"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dali_et_income"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Expenses EditText — prefix: dali -->
+    <EditText
+        android:id="@+id/dali_et_expenses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_label_expenses" />
+
+    <!-- Save Button — prefix: dali -->
+    <Button
+        android:id="@+id/dali_btn_save"
+        android:layout_width="264dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="64dp"
+        android:text="დაანგარიშება"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_et_expenses" />
+
+    <!-- Formula hint -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

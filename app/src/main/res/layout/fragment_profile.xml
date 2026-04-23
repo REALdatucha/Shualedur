@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/background">
+
+    <!-- Title — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_profile_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="პროფილი"
+        android:textColor="@color/expense_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Avatar placeholder -->
+
+    <!-- Name — prefix: dali -->
+    <View
+        android:id="@+id/dali_view_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/btn_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_profile_title" />
+
+    <TextView
+        android:id="@+id/dali_tv_profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="სახელი: დავითი ამირანაშვილი"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/dali_view_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Group — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_profile_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ჯგუფი: 2"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_profile_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Birthdate — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_profile_birthdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="დაბადების თარიღი: 24 სექტემბერი 2004"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_profile_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/dali_divider_profile"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_profile_birthdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- K Formula — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_profile_formula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="K კოეფიციენტი"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/dali_divider_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/dali_tv_profile_k_calc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="K = (სახელი 6 + გვარი 12) / 24 = 0.75"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_profile_formula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Orientation note — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_profile_orientation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="გვარი „ამირანაშვილი"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_profile_k_calc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

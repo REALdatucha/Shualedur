@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/background">
+
+    <!-- Title — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_analytics_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="ანალიტიკა"
+        android:textColor="@color/expense_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- K value — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_k_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="K = (6 + 12) / 24 = 0.75"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_analytics_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/dali_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_k_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Income display — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_income_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="შემოსავალი: "
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_divider" />
+
+    <!-- Expenses display — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_expenses_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ხარჯები: "
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_income_display" />
+
+    <!-- Net display — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_net_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="სუფთა : "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_expenses_display" />
+
+    <!-- Final Savings — prefix: dali -->
+    <TextView
+        android:id="@+id/dali_tv_savings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="დანაზოგი"
+        android:textColor="@color/expense_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dali_tv_net_display" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
