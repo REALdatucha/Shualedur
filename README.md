@@ -1,4 +1,4 @@
-# Finance Portfolio — დავითი ამირანაშვილი
+# Advanced Wealth Tracker— დავითი ამირანაშვილი
 
 ## K კოეფიციენტი
 
